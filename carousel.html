@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Tech: Week 3 - Carousel</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./custom.css" type="text/css">
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="i-want-a-server.js"></script>
+
+    <style>
+        .carousel-item {
+            max-height:400px;
+        }
+    </style>
+</head>
+<body>
+  <main class="container">
+
+    <h2>This is a sample Carousel</h2>
+
+    <div id="carousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnMms1PIxGoe4tngd8wTgdr8hMxLrb6Wc3bYaksuYAQqnsCqRhrIGrY9eetz2dlEQ1oM&usqp=CAU">
+            <div class="carousel-caption">
+              <p class="display-3">Mmmm ... thinking, I am.</p>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"  src="http://www.takeela.com/new/wp-content/uploads/2014/09/yoda-blog2-280x300.jpg" >
+            <div class="carousel-caption">
+              <p class="display-3">Blue, I am feeling.</p>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100"  src="https://pbs.twimg.com/profile_images/548243855272062976/VhBxjzWG_400x400.jpeg">
+            <div class="carousel-caption">
+              <p class="display-3">Lost in the woods, I may be... </p>
+            </div> 
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  </main>
+</body>
+</html>

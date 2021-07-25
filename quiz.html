@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Tech: Week 1 - Home</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./custom.css" type="text/css">
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="i-want-a-server.js"></script>
+
+    <style>
+        div {
+            text-align:center;
+            padding: 0.25em;
+        }
+
+        body > main > div, 
+        body > main > div > div > div > div > div {
+            border:1px solid red;
+        }
+        body > main > div > div {
+            border:1px solid blue;
+        }
+        body > main > div > div > div {
+            border:1px solid green;
+        }
+        body > main > div > div > div > div {
+            border:1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="container">
+    
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-sm-3">
+                    25% width
+                </div>
+                <div class="col-sm-6">
+                    50% width
+                    <div class="row">
+                        <div class="col-sm-9">
+                            75% width
+                        </div>
+                        <div class="col-sm-3">
+                            25% width
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    25% width
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

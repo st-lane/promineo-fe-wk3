@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Tech: Week 2 - A Form</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./custom.css" type="text/css">
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="i-want-a-server.js"></script>
+</head>
+<body>
+    <main class="container">
+        <h2>A form, without script or a server, is uninformed.</h2>
+        
+        <h3>Search www.uhc.com for:</h3>
+        <p><strong>Notes:</strong>
+        <ul>
+            <li>Submitting this form opens a new tab.  Close the tab to return here.</li>
+            <li>There is no validation on this form - Garbage In, Garbage Out applies in full.</li>
+        </ul> 
+        </p>
+
+        <form class="container col-6 float-start" action="https://www.uhc.com/searchresult" method="GET" target="_new">
+            <div class="row">
+                <div class="col mb-3">
+                    <label class="form-label col-12">Search term</label>
+                    <input class="form-control-lg" type="text" name="q" placeholder="A search term or string">
+                </div>
+                <div class="col mb-3">
+                    <label class="form-label col-12">Sort by</label>
+                    <select name="sort" class="form-select-lg">
+                        <option value="">Relevance</option>
+                        <option value="last_modified_d+desc">Date (newest first)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-lg btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
